@@ -1,4 +1,4 @@
-#LOCAL HOST 
+#LOCAL HOST =======================================
 #RETRIEVE ALL CONTACTS IN COLLECTION
 GET http://localhost:3000/contacts
 ###
@@ -16,6 +16,7 @@ Content-Type: application/json
 #DELETE ONE CONTACT
 DELETE http://localhost:3000/contacts/6272f953b48ad8a620959b6e HTTP/1.1
 ###
+#UPDATE ONE CONTACT
 PUT http://localhost:3000/contacts/626c08017c9dc1872d304ca2
 Content-Type: application/json 
 
@@ -44,3 +45,11 @@ Content-Type: application/json
 ###DELETE contact 
 DELETE https://cse341nodefuller.herokuapp.com/contacts/6273028be10fb67b0e6055dc HTTP/1.1
 
+###
+#UPDATE ONE CONTACT
+PUT https://cse341nodefuller.herokuapp.com/contacts/626c08017c9dc1872d304ca2
+Content-Type: application/json 
+
+{
+    "firstName": "John", "lastName": "Smith", "email": "max@c.com", "favoriteColor": "Yellow", "birthday": "1/20/1998" 
+}
