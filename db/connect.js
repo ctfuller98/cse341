@@ -17,6 +17,7 @@ const initDatabase = () => {
         });
 }
 const getCollection = () => {
+    console.log("Collection retrieved successfully")
  return _collection;
 }
 
